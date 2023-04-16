@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Welcome to my webpage</title>
+
+</head>
+<body>
+    <center><h2 style="color: blue;">WELCOME TO MY WEBPAGE</h2><br>
+    
+    <a href="Others/about.html" target="_blank" style="background-color: black; color: green; font-size: larger;">ABOUT PAGE</a>
+        <a href="Others/blog.html" target="_blank" style="background-color: red; color: aqua; font-size: larger;"> BLOG PAGE </a>
+             <a href="Others/contact.html" target="_blank" style="color: blue; background-color: gold; font-size: larger;">CONTACT PAGE</a><br><br>
+    
+            </center><br>
+
+
+            <center style="color: blue;">
+
+            
+    <h3>Please fill in the form below correctly</h3><br>
+
+    <form action="">
+        <label for="fname">FIRST NAME:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">LAST NAME:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="mail">EMAIL:</label>
+            <input type="email" id="mail" name="mail"><br><br>
+
+        <label for="pword">PASSWORD:</label>
+             <input type="password" value="" id="myinput">
+                 <input type="checkbox" onclick="myfunction()" required><i>show password</i> 
+        <script>  
+         function myfunction() { 
+            var x = 
+            document.getElementById( "myinput" ) ;
+                if (x.type === "password") {
+                     x.type = "text" ;
+                         } else {
+                          x.type = 
+                             "password" ;
+}
+}
+     </script> </b><br><br>
+
+
+        <label for="gender">GENDER:</label>
+        <select name="gender" required>
+            <option value="">Please select one</option>
+                 <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                           <option value="Rather not say">Rather not say</option> 
+        </select><br><br>
+
+
+        <p><i><b>Please select your favourite food below</b></i></p>
+        <label for="beans"> Beans</label>
+         <input type="checkbox" id="favourite" name="beans"><br>
+             <label for="rice">Rice</label>
+                    <input type="checkbox" id="favourite" name="rice"><br>
+                        <label for="spaghetti">Spaghetti</label>
+                             <input type="checkbox" id="favourite" name="spaghetti"><br>
+                                     <label for="soup">Soup</label>
+                                         <input type="checkbox" id="favourite" name="soup"><br>
+                                             <label for="pizza">Pizza</label>
+                                                 <input type="checkbox" id="favourite" name="pizza"><br><br>
+
+
+        <label for="certificate">CERTIFICATE:</label>
+        <select name="certificate" required>
+            <option value=""">Please choose one...</option>
+              <option value="phd">PhD</option>
+                  <option value="olevel">O`Level</option>
+                     <option value="bsc">BSC</option>
+
+            
+        </select><br><br>
+        <label for="pnumber"> PHONE NUMBER: </label>
+         <input type="number" id="pnumber" name="pnumber"><br><br>
+
+        <label for="ays"><i>Tell us about yourself:</i> </label><br>
+          <textarea name="ays" id="ays" cols="40" rows="10"></textarea>
+
+        
+    </b>
+    </form><br>
+
+    
+        <input type="submit" style="background-color: blue;" id="form" name="form"> 
+    </form>
+
+</center><br>
+</body>
+</html>
